@@ -11,7 +11,7 @@ class MyLoginApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo[700],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       darkTheme: ThemeData(
@@ -20,14 +20,14 @@ class MyLoginApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: PantallaIngreso(),
-    );//Fin de materialapp
-  }//Fin de widget
-}//Fin de clase myloginapp
+    ); //Fin de materialapp
+  } //Fin de widget
+} //Fin de clase myloginapp
 
 class PantallaIngreso extends StatefulWidget {
   @override
   _PantallaIngresoState createState() => _PantallaIngresoState();
-}//Fin de clase pantallaingreso
+} //Fin de clase pantallaingreso
 
 class _PantallaIngresoState extends State<PantallaIngreso> {
   bool isLogin = false;
@@ -35,6 +35,7 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
   void initState() {
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,23 +68,23 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
               print('Filter button');
             },
           ),
-        ],//Fin de widget[]
+        ], //Fin de widget[]
         title: Text('Login por Robles'),
-      ),//Fin de appbar
+      ), //Fin de appbar
       body: SafeArea(
-        child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 24.0),
+          child: ListView(padding: EdgeInsets.symmetric(horizontal: 24.0), children: <Widget>[
+        SizedBox(
+          height: 80.0,
+        ),
+        Column(
           children: <Widget>[
-            SizedBox(height:80.0,),
-            Column(
-              children: <Widget>[
-                Image.asset('assets/login.png'),
-                SizedBox(height: 20.0),
-              ],
-            ),
-          ]//Fin de widget[]
-        )//Fin de listview
-      ),//Fin de area segura
-    );//Fin scaffold
-  }//Fin de widget build
-}//Fin de clase _pantallaingresostate
+            Image.asset('assets/login.png'),
+            SizedBox(height: 20.0),
+          ],
+        ),
+      ] //Fin de widget[]
+              ) //Fin de listview
+          ), //Fin de area segura
+    ); //Fin scaffold
+  } //Fin de widget build
+} //Fin de clase _pantallaingresostate
