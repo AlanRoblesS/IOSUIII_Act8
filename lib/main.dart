@@ -11,7 +11,7 @@ class MyLoginApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch: Colors.indigo[700],
+        primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       darkTheme: ThemeData(
@@ -91,7 +91,7 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                     decoration: InputDecoration(
                       filled: true,
                       // fillColor: Colors.amber,
-                      labelText: 'Username',
+                      labelText: 'Nombre de usuario',
                     ),
                   ),
                 ] //Fin de widget[]
