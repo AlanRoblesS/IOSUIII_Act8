@@ -101,6 +101,32 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                     ),
                     obscureText: true,
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        FlatButton(
+                          child: Text('CANCEL'),
+                          onPressed: () {
+                            setState(() {
+                              isLogin = false;
+                            });
+                          },
+                        ),
+                        RaisedButton(
+                          child: Text(
+                            'NEXT2',
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              isLogin = true;
+                            });
+                          },
+                        ),
+                      ], //Fin de widget[]
+                    ), //Fin de row
+                  ) //Fin de padding
                 ] //Fin de widget[]
               ) //Fin de columna
           ] //Fin de widget[]
