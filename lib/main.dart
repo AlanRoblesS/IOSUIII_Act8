@@ -94,6 +94,13 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                       labelText: 'Nombre de usuario',
                     ),
                   ),
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      labelText: 'Contraseña',
+                    ),
+                    obscureText: true,
+                  ),
                 ] //Fin de widget[]
               ) //Fin de columna
           ] //Fin de widget[]
