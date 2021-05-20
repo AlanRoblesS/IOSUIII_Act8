@@ -107,7 +107,7 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         FlatButton(
-                          child: Text('CANCEL'),
+                          child: Text('Cancelar'),
                           onPressed: () {
                             setState(() {
                               isLogin = false;
@@ -115,9 +115,7 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                           },
                         ),
                         RaisedButton(
-                          child: Text(
-                            'NEXT2',
-                          ),
+                          child: Text('Continuar',),
                           onPressed: () {
                             setState(() {
                               isLogin = true;
