@@ -84,7 +84,7 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                 SizedBox(height: 20.0),
               ],
             ),
-            if (!isLogin){
+            if (!isLogin)
               Column(
                 children: <Widget>[
                   TextField(
@@ -96,10 +96,6 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                   ),
                 ] //Fin de widget[]
               ) //Fin de columna
-            } //Fin de if verdadero
-            else{
-
-            } //Fin de if falso
           ] //Fin de widget[]
         ) //Fin de listview
       ), //Fin de area segura
