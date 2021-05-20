@@ -72,19 +72,37 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
         title: Text('Login por Robles'),
       ), //Fin de appbar
       body: SafeArea(
-          child: ListView(padding: EdgeInsets.symmetric(horizontal: 24.0), children: <Widget>[
-        SizedBox(
-          height: 80.0,
-        ),
-        Column(
+        child: ListView(
+          padding: EdgeInsets.symmetric(horizontal: 24.0), 
           children: <Widget>[
-            Image.asset('assets/login.png'),
-            SizedBox(height: 20.0),
-          ],
-        ),
-      ] //Fin de widget[]
-              ) //Fin de listview
-          ), //Fin de area segura
+            SizedBox(
+              height: 80.0,
+              ),
+            Column(
+              children: <Widget>[
+                Image.asset('assets/login.png'),
+                SizedBox(height: 20.0),
+              ],
+            ),
+            if (!isLogin){
+              Column(
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      // fillColor: Colors.amber,
+                      labelText: 'Username',
+                    ),
+                  ),
+                ] //Fin de widget[]
+              ) //Fin de columna
+            } //Fin de if verdadero
+            else{
+
+            } //Fin de if falso
+          ] //Fin de widget[]
+        ) //Fin de listview
+      ), //Fin de area segura
     ); //Fin scaffold
   } //Fin de widget build
 } //Fin de clase _pantallaingresostate
