@@ -127,6 +127,23 @@ class _PantallaIngresoState extends State<PantallaIngreso> {
                   ) //Fin de padding
                 ] //Fin de widget[]
               ) //Fin de columna
+            else 
+              Center(
+                child: Column(
+                  children: <Widget>[
+                    Text('Iniciaste sesion exitosamente'),
+                    RaisedButton(
+                      elevation: 20.0,
+                      child: Text('Cerrar sesion'),
+                      onPressed: () {
+                        setState(() {
+                          isLogin = false;
+                        });
+                      },
+                    )
+                  ], //Fin de widget[]
+                ), //Fin de columna
+              ) //Fin de center
           ] //Fin de widget[]
         ) //Fin de listview
       ), //Fin de area segura
